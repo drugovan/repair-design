@@ -408,10 +408,18 @@ template {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     text-decoration: none;
     color: #E3B873;
     transform: rotate(90deg); }
+    .instagram__link::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 8px; }
 
 .title {
   margin: 0;
