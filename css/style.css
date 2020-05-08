@@ -342,6 +342,13 @@ template {
   max-width: 1256px;
   margin: 0 auto; }
 
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Futura Book', sans-serif;
+  font-size: 14px; }
+
 .header {
   position: fixed;
   width: 100%;
@@ -455,10 +462,3 @@ template {
   font-weight: normal; }
   .title--primary {
     color: #E3B873; }
-
-*, *::before, *::after {
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 14px; }
