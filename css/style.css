@@ -401,6 +401,14 @@ template {
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff; }
+    .hero__scroll-down::after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background: url("../img/icon/arrow-down.svg") center no-repeat;
+      border: 2px solid #E3B873;
+      border-radius: 50%;
+      margin-left: 12px; }
 
 .instagram {
   display: flex;
