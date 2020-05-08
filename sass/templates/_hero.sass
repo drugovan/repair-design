@@ -7,7 +7,16 @@
   background: $dark url('../img/hero-bg.jpg') no-repeat center/cover
   height: 100vh
   color: $light
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba($dark, 0.7)
   &__content
+    position: relative
     max-width: 670px
   &__text
     max-width: 500px
