@@ -454,7 +454,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    max-width: 92px;
+    max-width: 6.57rem;
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
@@ -498,3 +498,55 @@ body {
       height: 1px;
       background-color: #E3B873;
       margin-left: 8px; }
+
+@media screen and (max-width: 1440px) {
+  .nav__item {
+    margin-right: 1.5rem; }
+  .contacts__phone {
+    margin-right: 1.5rem; } }
+
+@media screen and (max-width: 1199px) {
+  html {
+    font-size: 14px; }
+  .nav__item {
+    margin-right: 2rem; }
+  .contacts__phone {
+    margin-right: 0; }
+  .contacts__button {
+    display: none; }
+  .hero__instagram {
+    max-width: 4.57rem; }
+  .hero__scroll-down {
+    min-height: 4.93rem; } }
+
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 12px; }
+  .hero__instagram {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .menu__nav {
+    display: none; }
+  .hero__scroll-down {
+    display: none; }
+  .hero__content {
+    margin-left: 0; }
+  .hero__text {
+    max-width: 31.71rem; } }
+
+@media screen and (max-width: 575px) {
+  .hero {
+    background: #131313 url("../img/hero-bg-375.jpg") no-repeat center/cover; }
+    .hero__title {
+      max-width: 30.86rem;
+      font-size: 1.92rem;
+      line-height: 2.55rem; }
+    .hero__text {
+      max-width: 40rem;
+      font-size: 1.5rem;
+      line-height: 2.04rem; }
+    .hero__button {
+      width: 100%; }
+      .hero__button--primary {
+        margin-bottom: 26px; } }
