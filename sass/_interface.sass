@@ -1,5 +1,6 @@
 .button
-  padding: 13px 20px
+  // padding
+  padding: 19px 26px
   border: none
   border-radius: 2px
   text-transform: uppercase
@@ -16,3 +17,31 @@
     border: 1px solid $light
     background-color: transparent
     color: $light
+.title
+  margin: 0
+  font-family: 'Yeseva One', cursive
+  text-transform: uppercase
+  font-size: 2.86rem
+  font-weight: normal
+  line-height: 3.76rem
+  &--primary
+    color: $primary
+.section
+  &-title
+    text-align: center
+    text-transform: uppercase
+    font-family: 'Yeseva One', cursive
+    &__heading
+      font-size: 1.43rem
+      font-weight: normal
+    &__image
+      display: flex
+      justify-content: center
+      align-items: center
+      &::before, &::after
+        content: ''
+        width: 32px
+        height: 2px
+        background-color: $primary
+        border-radius: 30px
+        margin: 0 10px
