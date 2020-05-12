@@ -368,7 +368,7 @@ template {
       margin: 0 10px; }
 
 .container {
-  width: 85%;
+  width: 87%;
   max-width: 1256px;
   margin: 0 auto; }
 
@@ -534,10 +534,14 @@ body {
 @media screen and (max-width: 991px) {
   html {
     font-size: 12px; }
+  .container {
+    width: 95%; }
   .hero__instagram {
     display: none; } }
 
 @media screen and (max-width: 767px) {
+  .container {
+    width: 87%; }
   .menu__nav {
     display: none; }
   .hero__scroll-down {
