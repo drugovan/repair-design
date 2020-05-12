@@ -354,7 +354,8 @@ template {
   font-family: 'Yeseva One', cursive; }
   .section-title__heading {
     font-size: 1.43rem;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 1.6rem; }
   .section-title__image {
     display: flex;
     justify-content: center;
