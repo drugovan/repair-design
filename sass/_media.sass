@@ -1,4 +1,7 @@
 @media screen and ( max-width: 1440px )
+  .container
+    width: 90%
+  // heared
   .nav
     &__item
       margin-right: 1.5rem
@@ -8,6 +11,9 @@
 @media screen and (max-width: 1199px)
   html
     font-size: 14px
+  .container
+    width: 95%
+  // header
   .nav
     &__item
       margin-right: 2rem
@@ -16,25 +22,57 @@
       margin-right: 0
     &__button
       display: none
+  // hero
   .hero
     &__instagram
       max-width: 4.57rem
     &__scroll-down
       min-height: 4.93rem
+  // types
+  .card
+    &__text
+      width: 90%
+      margin-top: -7rem
+    &__title
+      font-size: 1.14rem
+    &__list
+      font-size: 1rem
+      line-height: 1.69rem
+    &__pricetag
+      font-size: 1.14rem
 @media screen and ( max-width: 991px )
   html
     font-size: 12px
-  .container
-    width: 95%
+  // hero
   .hero
     &__instagram
       display: none
+  // types
+  .row
+    flex-direction: column
+    align-items: center
+  .card
+    &__text
+      margin-left: 0
+      max-width: 22.5rem
+      margin-bottom: 6.58rem
+      &-last
+        margin-bottom: 0
+    &__title
+      font-size: 1.25rem
+    &__list
+      font-size: 1.07rem
+      line-height: 1.83rem
+    &__pricetag
+      font-size: 1.29rem
 @media screen and ( max-width: 767px )
   .container
     width: 87%
+  // header
   .menu
     &__nav
       display: none
+  // hero
   .hero
     &__scroll-down
       display: none
@@ -43,6 +81,7 @@
     &__text
       max-width: 31.71rem
 @media screen and ( max-width: 575px )
+  // hero
   .hero
     background: $dark url('../img/hero-bg-375.jpg') no-repeat center/cover
     &__title

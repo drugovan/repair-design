@@ -535,6 +535,7 @@ img {
 .card__text {
   position: relative;
   max-width: 23.65rem;
+  width: 87%;
   margin: 0 auto;
   margin-top: -9.25rem;
   padding: 1.60rem 2.23rem;
@@ -572,6 +573,8 @@ img {
   box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
 @media screen and (max-width: 1440px) {
+  .container {
+    width: 90%; }
   .nav__item {
     margin-right: 1.5rem; }
   .contacts__phone {
@@ -580,6 +583,8 @@ img {
 @media screen and (max-width: 1199px) {
   html {
     font-size: 14px; }
+  .container {
+    width: 95%; }
   .nav__item {
     margin-right: 2rem; }
   .contacts__phone {
@@ -589,15 +594,39 @@ img {
   .hero__instagram {
     max-width: 4.57rem; }
   .hero__scroll-down {
-    min-height: 4.93rem; } }
+    min-height: 4.93rem; }
+  .card__text {
+    width: 90%;
+    margin-top: -7rem; }
+  .card__title {
+    font-size: 1.14rem; }
+  .card__list {
+    font-size: 1rem;
+    line-height: 1.69rem; }
+  .card__pricetag {
+    font-size: 1.14rem; } }
 
 @media screen and (max-width: 991px) {
   html {
     font-size: 12px; }
-  .container {
-    width: 95%; }
   .hero__instagram {
-    display: none; } }
+    display: none; }
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .card__text {
+    margin-left: 0;
+    max-width: 22.5rem;
+    margin-bottom: 6.58rem; }
+    .card__text-last {
+      margin-bottom: 0; }
+  .card__title {
+    font-size: 1.25rem; }
+  .card__list {
+    font-size: 1.07rem;
+    line-height: 1.83rem; }
+  .card__pricetag {
+    font-size: 1.29rem; } }
 
 @media screen and (max-width: 767px) {
   .container {
