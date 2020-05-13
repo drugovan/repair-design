@@ -2,6 +2,8 @@
   .container
     width: 90%
   // heared
+  .header-container
+    width: 90%
   .nav
     &__item
       margin-right: 1.5rem
@@ -14,6 +16,8 @@
   .container
     width: 95%
   // header
+  .header-container
+    width: 95%
   .nav
     &__item
       margin-right: 2rem
@@ -65,10 +69,23 @@
       line-height: 1.83rem
     &__pricetag
       font-size: 1.29rem
+  // design
+  .design
+    background-color: $dark
+  .section-title
+    &__heading
+      &--light
+        color: $light
+  .section-prelude
+    &__text
+      &--light
+        color: $light
 @media screen and ( max-width: 767px )
   .container
     width: 87%
   // header
+  .header-container
+    width: 87%
   .menu
     &__nav
       display: none
