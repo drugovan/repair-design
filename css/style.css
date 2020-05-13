@@ -642,6 +642,8 @@ img {
     margin-bottom: 3.26rem; }
 
 .modal {
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   left: 0;
   top: 0;
@@ -654,6 +656,9 @@ img {
   justify-content: center;
   align-items: center;
   background-color: rgba(19, 19, 19, 0.7); }
+  .modal--visible {
+    opacity: 1;
+    visibility: visible; }
   .modal__dialog {
     position: relative;
     max-width: 36.20rem;
