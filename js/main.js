@@ -34,6 +34,7 @@ $(document).ready(function () {
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close'),
       modalDialog = $('.modal__dialog');
+  var scrollUp = $('.scrollup');
 
   modalBtn.on('click', () => {
     modal.toggleClass('modal--visible');
@@ -55,4 +56,18 @@ $(document).ready(function () {
         modal.toggleClass('modal--visible'); // скрываем его
     }
   })
+
+
+  $(window).scroll( () => {
+    if ($(this).scrollTop() > 100) {
+      scrollUp.fadeIn();
+    } else {
+      scrollUp.fadeOut();
+    }
+  });
+
+  scrollUp.click( () => {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+  });
 });
