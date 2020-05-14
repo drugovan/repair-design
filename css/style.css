@@ -320,7 +320,7 @@ template {
 
 .button {
   font-family: 'Futura Demi', cursive;
-  padding: 17px 26px;
+  padding: 1.21rem 1.86rem;
   border: none;
   border-radius: 2px;
   text-transform: uppercase; }
@@ -522,7 +522,7 @@ img {
   top: 0;
   z-index: 99;
   background-color: #131313;
-  padding: 24px 0; }
+  padding: 1.71rem 0; }
 
 .menu {
   display: flex;
@@ -566,7 +566,7 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 7.14rem;
   background: #131313 url("../img/hero-bg.jpg") no-repeat center top/cover;
   height: 100vh;
   color: #ffffff; }
@@ -583,12 +583,12 @@ img {
   .hero__content {
     position: relative;
     max-width: 47.86rem;
-    margin-left: 55px; }
+    margin-left: 3.93rem; }
   .hero__text {
     max-width: 35.71rem;
     font-size: 1.57rem;
     line-height: 2.14rem;
-    margin-bottom: 47px; }
+    margin-bottom: 3.36rem; }
   .hero__button {
     margin-right: 17px;
     min-width: 14.79rem;
@@ -810,3 +810,46 @@ img {
       width: 100%; }
       .hero__button--primary {
         margin-bottom: 26px; } }
+
+@media screen and (max-height: 600px) {
+  .hero__scroll-down {
+    display: none; } }
+
+@media screen and (max-height: 414px) {
+  html {
+    font-size: 11px; }
+  .modal__dialog {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 3.50rem 1rem; }
+  .modal__input {
+    margin-bottom: 1.8rem; }
+    .modal__input:last-of-type {
+      margin-bottom: 0.8rem; }
+  .modal__policy {
+    margin-bottom: 1.5rem; } }
+
+@media screen and (max-height: 320px) {
+  html {
+    font-size: 10px; }
+  .hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .hero__content-wrapper {
+      flex-basis: 58%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .hero__content-button {
+      flex-basis: 35%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+  .hero__button {
+    min-width: 10rem;
+    margin-right: 0;
+    margin-bottom: 26px;
+    padding: 1.5rem 1rem; } }
