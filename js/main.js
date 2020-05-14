@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) {
-      switchModal();
+      modal.classList.remove('modal--visible');
     }
   });
 
@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 });
 */
+
+
 
 $(document).ready(function () {
   var modal = $('.modal'),
@@ -42,22 +44,22 @@ $(document).ready(function () {
 
   closeBtn.on('click', () => {
     modal.toggleClass('modal--visible');
-  })
+  });
 
   $(document).on('keyup', (e) => {
-    if (e.which == 27) {
-      modal.toggleClass('modal--visible');
+    if (e.keyCode == 27) {
+      modal.removeClass('modal--visible');
     }
-  })
+  });
 
   modal.on('click', (e) => {
     if (!modalDialog.is(e.target) // если клик был не по нашему блоку
       && modalDialog.has(e.target).length === 0) { // и не по его дочерним элементам
         modal.toggleClass('modal--visible'); // скрываем его
     }
-  })
+  });
 
-
+// scrollup
   $(window).scroll( () => {
     if ($(this).scrollTop() > 200) {
       scrollUp.fadeIn();
