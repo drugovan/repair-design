@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", function (event) {
   const modal = document.querySelector('.modal')
   const modalBtn = document.querySelectorAll('[data-toggle=modal]')
@@ -25,4 +26,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
   });
 
+});
+*/
+
+$(document).ready(function () {
+  var modal = $('.modal'),
+      modalBtn = $('[data-toggle=modal]'),
+      closeBtn = $('.modal__close'),
+      modalDialog = $('.modal__dialog');
+
+  modalBtn.on('click', () => {
+    modal.toggleClass('modal--visible');
+  });
+
+  closeBtn.on('click', () => {
+    modal.toggleClass('modal--visible');
+  })
+
+  $(document).on('keyup', (e) => {
+    if (e.which == 27) {
+      modal.toggleClass('modal--visible');
+    }
+  })
+
+  modal.on('click', (e) => {
+    if (!modalDialog.is(e.target) // если клик был не по нашему блоку
+      && modalDialog.has(e.target).length === 0) { // и не по его дочерним элементам
+        modal.toggleClass('modal--visible'); // скрываем его
+    }
+  })
 });
