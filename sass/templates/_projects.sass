@@ -1,0 +1,84 @@
+.projects
+  padding-top: 9.14rem
+  &__swiper-wrapper
+    margin-bottom: 7.3rem
+  &__section-title
+    text-align: left
+    margin-bottom: 3.4rem
+  &__heading
+    font-weight: normal
+    font-size: 1.93rem
+    line-height: 2.64rem
+    letter-spacing: -0.07em
+    margin-bottom: 1.6rem
+    &--word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 6.57rem
+        height: 1px
+        margin-left: 2.4rem
+        background-color: $primary
+  &__text
+    max-width: 31.57rem
+    font-size: 1.29rem
+    line-height: 2.07rem
+    color: $light
+  &__row
+    width: 31.57rem
+    display: flex
+    flex-direction: column
+    &-inside
+      width: 100%
+      &:first-of-type
+        margin-bottom: 2.7rem
+.swiper
+  &-slide
+    display: flex
+    flex-wrap: wrap
+    &__text
+      min-width: 10.79rem
+      margin-right: auto
+      &--cell
+        margin-right: 2.79rem
+    &__heading
+      margin-bottom: 0.3rem
+      font-family: 'Yeseva One', cursive
+      font-size: 1.29rem
+      line-height: 1.79rem
+      font-weight: normal
+      text-transform: uppercase
+      color: $primary
+    &__value
+      display: block
+      font-size: 1.07rem
+      line-height: 1.43rem
+      color: $light
+  &-pagination
+    &-bullet
+      width: 0.64rem
+      height: 0.64rem
+        margin: 0 10px
+      background-color: rgba($light, 0.3)
+      &-active
+        background-color: $light
+  &-button
+    &-prev, &-next
+      bottom: 0
+      top: auto
+      width: 3rem
+      height: 1rem
+      background-size: 3rem
+      &::after
+       display: none
+    &-prev
+      left: 0
+      background: url('../img/projects/icon/arrow-prev.svg') no-repeat center
+    &-next
+      background: url('../img/projects/icon/arrow-next.svg') no-repeat center
+.swiper-container-horizontal>.swiper-pagination-bullets
+  width: auto
+  bottom: -1px
+.swiper-container-horizontal>.swiper-pagination-bullets>.swiper-pagination-bullet
+  margin: 0 0.62rem

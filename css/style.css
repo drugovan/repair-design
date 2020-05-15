@@ -350,14 +350,17 @@ template {
 
 .section {
   padding: 60px 0; }
+  .section--dark {
+    background-color: #131313; }
   .section-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive; }
+    text-align: center; }
     .section-title__heading {
+      text-transform: uppercase;
+      font-family: 'Yeseva One', cursive;
       font-size: 1.43rem;
-      font-weight: normal;
-      margin-bottom: 1.45rem; }
+      font-weight: normal; }
+      .section-title__heading--primary {
+        color: #E3B873; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -376,14 +379,6 @@ template {
     line-height: 1.93rem;
     text-align: center;
     color: #363636; }
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; }
-
-.col {
-  flex-basis: 31.7%; }
 
 .card__image {
   width: 100%; }
@@ -499,6 +494,20 @@ template {
   width: 87%;
   max-width: 1236px;
   margin: 0 auto; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.col-30 {
+  flex-basis: 31.7%; }
+
+.col-50 {
+  width: 40%; }
+
+.col-img {
+  width: 53.6%; }
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -652,6 +661,95 @@ img {
       height: 1px;
       background-color: #E3B873;
       margin-left: 14px; }
+
+.projects {
+  padding-top: 9.14rem; }
+  .projects__swiper-wrapper {
+    margin-bottom: 7.3rem; }
+  .projects__section-title {
+    text-align: left;
+    margin-bottom: 3.4rem; }
+  .projects__heading {
+    font-weight: normal;
+    font-size: 1.93rem;
+    line-height: 2.64rem;
+    letter-spacing: -0.07em;
+    margin-bottom: 1.6rem; }
+    .projects__heading--word {
+      display: flex;
+      align-items: center; }
+      .projects__heading--word::after {
+        content: '';
+        width: 6.57rem;
+        height: 1px;
+        margin-left: 2.4rem;
+        background-color: #E3B873; }
+  .projects__text {
+    max-width: 31.57rem;
+    font-size: 1.29rem;
+    line-height: 2.07rem;
+    color: #ffffff; }
+  .projects__row {
+    width: 31.57rem;
+    display: flex;
+    flex-direction: column; }
+    .projects__row-inside {
+      width: 100%; }
+      .projects__row-inside:first-of-type {
+        margin-bottom: 2.7rem; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    min-width: 10.79rem;
+    margin-right: auto; }
+    .swiper-slide__text--cell {
+      margin-right: 2.79rem; }
+  .swiper-slide__heading {
+    margin-bottom: 0.3rem;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.29rem;
+    line-height: 1.79rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #E3B873; }
+  .swiper-slide__value {
+    display: block;
+    font-size: 1.07rem;
+    line-height: 1.43rem;
+    color: #ffffff; }
+
+.swiper-pagination-bullet {
+  width: 0.64rem;
+  height: 0.64rem;
+    height-margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  width: 3rem;
+  height: 1rem;
+  background-size: 3rem; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/projects/icon/arrow-prev.svg") no-repeat center; }
+
+.swiper-button-next {
+  background: url("../img/projects/icon/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -1px; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets > .swiper-pagination-bullet {
+  margin: 0 0.62rem; }
 
 .types__section-title {
   margin-bottom: 2.21rem; }

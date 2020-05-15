@@ -29,14 +29,17 @@
 .section
   // temporally
   padding: 60px 0
+  &--dark
+    background-color: $dark
   &-title
     text-align: center
-    text-transform: uppercase
-    font-family: 'Yeseva One', cursive
     &__heading
+      text-transform: uppercase
+      font-family: 'Yeseva One', cursive
       font-size: 1.43rem
       font-weight: normal
-      margin-bottom: 1.45rem
+      &--primary
+        color: $primary
     &__image
       display: flex
       justify-content: center
@@ -56,12 +59,6 @@
     line-height: 1.93rem
     text-align: center
     color: $dark-text
-.row
-  display: flex
-  justify-content: space-between
-  align-items: flex-start
-.col
-  flex-basis: 31.7%
 .card
   &__image
     width: 100%
