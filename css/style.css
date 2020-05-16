@@ -475,6 +475,7 @@ template {
   position: fixed;
   bottom: 50px;
   right: 100px;
+  z-index: 999;
   opacity: 1;
   display: none;
   text-indent: -9999px;
@@ -490,7 +491,7 @@ template {
   max-width: 1256px;
   margin: 0 auto; }
 
-.container {
+.container, .hero-container {
   width: 87%;
   max-width: 1236px;
   margin: 0 auto; }
@@ -694,7 +695,8 @@ img {
     display: flex;
     flex-direction: column; }
     .projects__row-inside {
-      width: 100%; }
+      width: 100%;
+      display: flex; }
       .projects__row-inside:first-of-type {
         margin-bottom: 2.7rem; }
 
@@ -832,6 +834,8 @@ img {
     margin-right: 1.5rem; } }
 
 @media screen and (max-width: 1199px) {
+  .container {
+    width: 92%; }
   .header-container {
     width: 95%; }
   .nav__item {
@@ -860,8 +864,18 @@ img {
 @media screen and (max-width: 991px) {
   html {
     font-size: 12px; }
+  .container {
+    width: 92%; }
   .hero__instagram {
     display: none; }
+  .col-50 {
+    width: 100%;
+    margin-bottom: 2rem; }
+  .col-img {
+    width: 31.57rem;
+    align-self: flex-start; }
+  .swiper-button-prev, .swiper-button-next {
+    width: 3.5rem; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -913,7 +927,9 @@ img {
     .hero__button {
       width: 100%; }
       .hero__button--primary {
-        margin-bottom: 26px; } }
+        margin-bottom: 26px; }
+  .col-img {
+    width: 100%; } }
 
 @media screen and (max-height: 600px) {
   .hero__scroll-down {

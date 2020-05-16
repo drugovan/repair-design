@@ -13,8 +13,8 @@
 @media screen and (max-width: 1199px)
   // html
   //   font-size: 14px
-  // .container
-  //   width: 95%
+  .container
+    width: 92%
   // header
   .header-container
     width: 95%
@@ -49,10 +49,23 @@
 @media screen and ( max-width: 991px )
   html
     font-size: 12px
+  .container
+    width: 92%
   // hero
   .hero
     &__instagram
       display: none
+  // projects
+  .col-50
+    width: 100%
+    margin-bottom: 2rem
+  .col-img
+    width: 31.57rem
+    align-self: flex-start
+  .swiper
+    &-button
+      &-prev, &-next
+        width: 3.5rem
   // types
   .row
     flex-direction: column
@@ -115,6 +128,9 @@
       width: 100%
       &--primary
         margin-bottom: 26px
+  // projects
+  .col-img
+    width: 100%
 @media screen and (max-height: 600px)
   .hero
     &__scroll-down
