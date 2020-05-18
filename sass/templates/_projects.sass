@@ -1,5 +1,6 @@
 .projects
   padding-top: 9.14rem
+  padding-bottom: 4.29rem
   &__swiper-wrapper
     margin-bottom: 7.3rem
   &__section-title
@@ -12,14 +13,8 @@
     letter-spacing: -0.07em
     margin-bottom: 1.6rem
     &--word
-      display: flex
-      align-items: center
       &::after
-        content: ''
-        width: 6.57rem
-        height: 1px
         margin-left: 2.4rem
-        background-color: $primary
   &__text
     max-width: 31.57rem
     font-size: 1.29rem
@@ -60,16 +55,17 @@
     &-bullet
       width: 0.64rem
       height: 0.64rem
-        margin: 0 10px
+      margin: 0 10px
       background-color: rgba($light, 0.3)
       &-active
         background-color: $light
   &-button
     &-prev, &-next
-      bottom: 0
-      top: auto
       width: 3rem
       height: 1rem
+      bottom: 0
+      top: auto
+      margin: 0
       background-size: 3rem
       &::after
        display: none

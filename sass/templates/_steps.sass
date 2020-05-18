@@ -1,0 +1,95 @@
+.steps
+  padding-top: 0
+  &__row
+    width: 100%
+  &__col-first
+    width: 28%
+  // section-title
+  &__section-title
+    text-align: left
+    margin-bottom: 6.07rem
+  &__name
+    display: inline-block
+    margin-bottom: 1.15rem
+  &__heading
+    font-size: 1.93rem
+    line-height: 2.64rem
+    &--word
+      &::after
+        margin-left: 6.23rem
+  // number-slide
+  &__number-slide
+    align-items: flex-start
+    margin-bottom: 1.3rem
+    font-family: 'Yeseva One', cursive
+    font-size: 1.29rem
+    line-height: 1.79rem
+    text-transform: uppercase;
+    color: $light
+  &__swiper
+    &-slide
+      width: 100%
+      &--title
+        max-width: 18.71rem
+        margin-bottom: 0.7rem
+        font-family: 'Yeseva One', cursive
+        font-weight: normal
+        font-size: 1.07rem
+        line-height: 1.64rem
+        text-transform: uppercase
+        color: $primary
+      &--text
+        width: 100%
+        font-size: 1.07rem
+        line-height: 1.79rem
+        color: $light
+        &:first-of-type
+          margin-bottom: 0.9rem
+        &:last-of-type
+          margin-bottom: 5.55rem
+      &--img
+        min-height: 26.90rem
+  &__col-second
+    width: 62%
+    margin-top: 5.36rem
+  // steps-list
+  &-list
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    &__item
+      flex-basis: 9.07rem
+      margin-right: 2rem
+      color: $light
+      opacity: 0.3
+      cursor: pointer
+      &:hover
+        opacity: 1
+    &__number
+      display: flex
+      flex-direction: column
+      font-size: 1.07rem
+      line-height: 1.5rem
+      text-transform: uppercase
+      &::after
+        content: ''
+        width: 1.14rem
+        height: 1px
+        margin-top: 0.29rem
+        margin-bottom: 0.86rem
+        background-color: $primary
+    &__name
+      font-size: 1.07rem
+      line-height: 1.29rem
+  &__img
+    display: block
+    object-fit: cover
+.col
+  &-second
+    &__row
+      width: 100%
+      &:first-of-type
+        margin-bottom: 2.57rem
+.active
+  opacity: 1
+
