@@ -1,0 +1,62 @@
+.footer-section
+  position: relative
+  padding-bottom: 4.67rem
+  padding-bottom:
+  background: url('../img/section-footer/bg.png') no-repeat center / cover
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%)
+    z-index: 10
+.footer-modal
+  display: flex
+  position: relative
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  max-width: 63.07rem
+  width: 85%
+  margin: auto
+  padding-top: 2.2rem
+  padding-bottom: 2.46rem
+  background-color: $black
+  z-index: 99
+  &__row
+    display: flex
+    justify-content: space-between
+    margin-bottom: 3.2rem
+  &__title
+    margin-bottom: 3.21rem
+    font-family: 'Yeseva One', cursive
+    font-weight: normal
+    font-size: 1.43rem
+    line-height: 2rem
+    text-align: center
+    text-transform: uppercase
+    color: $light
+  &__form
+    width: 37.14rem
+  &__label
+    line-height: 1.28rem
+  &__input
+    padding-top: 0
+    padding-bottom: 0.39rem
+  &__policy
+    margin-bottom: 3.66rem
+    &-label
+      margin-left: -1.8rem
+  &__button
+    display: block
+    margin: auto
+    padding: 1.23rem 4.45rem;
+    border-radius: none
+  &__input-group
+    flex-basis: 44.5%
+    display: flex
+    flex-direction: column
+    &--last
+      margin-bottom: 3.32rem

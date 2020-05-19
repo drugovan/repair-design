@@ -134,10 +134,18 @@
   border-bottom: 1px solid rgba($light, 0.15)
   &--light
     &::placeholder
-      color: $light
+      color: #ffffff
+    &::-moz-placeholder
+      color: #ffffff
+    &:-moz-placeholder
+      color: #ffffff
   &--dark
     &::placeholder
-      color: $dark-text
+      color: #363636
+    &::-moz-placeholder
+      color: #363636
+    &:-moz-placeholder
+      color: #363636
 .policy
   &__checkbox
     opacity: 0
@@ -159,12 +167,16 @@
       margin-right: 0.55rem
       border: 1.5px solid $primary
       border-radius: 1px
+    &--light
+      color: $light
+    &--center
+      justify-content: center
 .scrollup
   width: 3.21rem
   height: 3.21rem
   position: fixed
-  bottom: 50px
-  right: 100px
+  bottom: 150px
+  right: 10%
   z-index: 999
   opacity: 1
   display: none

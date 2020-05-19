@@ -119,6 +119,7 @@ $(document).ready(function () {
   var stepsSwiperImg = new Swiper('.steps__swiper-container--img', {
     loop: true,
     autoHeight: true,
+    spaceBetween: 150,
     navigation: {
       nextEl: '.steps__swiper-button-next',
       prevEl: '.steps__swiper-button-prev',
@@ -152,7 +153,7 @@ $(document).ready(function () {
       stepsBullets = $('.steps__swiper-pagination');
 
   stepsBullets.css('left', stepsPrev.width() + 21);
-  stepsNext.css('left', stepsPrev.width() + 21 + stepsBullets.width() + 21);
+  stepsNext.css('left', stepsPrev.width() + 21 + stepsBullets.width() + 22);
 // ..styles for stepsSwiper pagination
 
 //swithing the slider by clicking on '.steps-list__item'

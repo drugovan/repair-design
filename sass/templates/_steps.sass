@@ -1,5 +1,6 @@
 .steps
   margin-top: -0.4rem
+  padding-bottom: 3rem
   &__row
     width: 100%
   &__col-first
@@ -51,22 +52,29 @@
       &--img
         min-height: 26.90rem
   &__col-second
-    width: 62%
-    margin-top: 6.5rem
+    width: 63.63%;
+    margin-right: -1.74rem;
+    margin-top: 6.5rem;
   // steps-list
   &-list
     display: flex
     flex-direction: column
     align-items: flex-start
-    margin-bottom: 2.34rem
+    margin-bottom: 3.58rem
     &__item
-      flex-basis: 9.07rem
-      margin-right: 2rem
       color: $light
       opacity: 0.3
       cursor: pointer
       &:hover
         opacity: 1
+      &--col-1
+        flex-basis: 9.12rem
+        margin-right: 14.36rem
+      &--col-2
+        flex-basis: 9.71rem
+        margin-right: 14.29rem
+      &--col-3
+        flex-basis: 7.14rem
     &__number
       display: flex
       flex-direction: column
@@ -91,6 +99,7 @@
 .col
   &-second
     &__row
+      justify-content: flex-start
       width: 100%
       &:first-of-type
         margin-bottom: 2.9rem

@@ -7,19 +7,7 @@
   .nav
     &__item
       margin-right: 1.5rem
-  .contacts
-    &__phone
-      margin-right: 1.5rem
-  // steps
-  .steps
-    &__col-first
-      width: 35%
-    &__col-second
-      width: 60%
-    &-list
-      &__item
-        flex-basis: 10rem;
-        margin-right: 0
+
 @media screen and (max-width: 1199px)
   // html
   //   font-size: 14px
@@ -56,6 +44,24 @@
       line-height: 1.69rem
     &__pricetag
       font-size: 1.14rem
+  // steps
+  .steps
+    &__col-first
+      width: 35%
+    &__col-second
+      width: 60%
+    // steps
+  .steps
+    &-list
+      &__item
+        flex-basis: 10rem;
+        margin-right: 0
+  // section-footer
+  .footer-modal
+    width: 75%
+  // footer
+  .footer-container
+    width: 95%
 @media screen and ( max-width: 991px )
   html
     font-size: 12px
@@ -107,9 +113,15 @@
   // steps
   .steps
     display: none
+  // section-footer
+  .footer-modal
+    width: 85%
+  // scrollup
+  .scrollup
+    bottom: 110px
 @media screen and ( max-width: 767px )
   .container
-    width: 87%
+    width: 90%
   // header
   .header-container
     width: 87%
@@ -148,9 +160,13 @@
     padding-bottom: 0
     &__text
       color: $light
+      &::before
+        margin-bottom: 1.2rem
     &__label
       color: rgba($light, 0.5)
     &__policy-label
+      margin: 0
+      justify-content: flex-start
       color: $light
     &__form
       width: 100%
@@ -165,9 +181,14 @@
         width: 100%
         margin-bottom: 1.9rem
     &__input
+      color: $light
       border-bottom: 1px solid rgba($light, 0.7);
       &::placeholder
-        color: $light
+        color: #ffffff
+      &::-moz-placeholder
+        color: #ffffff
+      &:-moz-placeholder
+        color: #ffffff
     &__button
       transform: translateY(50%)
       border-radius: 0
@@ -178,11 +199,16 @@
     &__video
       min-height: 24rem
       background-size: cover
-      margin-bottom: 3rem
+      margin-bottom: 2.33rem
   .video
     width: 87%
     &__play
       width: 8rem
+  // section-footer
+  .footer-section
+    background: $dark
+  .footer-modal
+    width: 100vw
 @media screen and ( max-width: 575px )
   // hero
   .hero
@@ -200,12 +226,23 @@
   //control
   .control
     &__video
-      min-height: 20rem
-
+      min-height: 23rem
+    &__policy
+      &-label
+    &__text
+      font-size: 1.15rem;
   .video
     width: 100%
     &__play
       width: 7.5rem
+@media screen and ( max-width: 497px )
+  .control
+    &__video
+      min-height: 20rem
+@media screen and ( max-width: 390px )
+  .control
+    &__video
+      min-height: 17rem
 @media screen and (max-height: 600px)
   .hero
     &__scroll-down

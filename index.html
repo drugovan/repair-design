@@ -231,21 +231,21 @@
       <form action="#" class="form control__form wow fadeInRight">
         <div class="control__input-group">
           <!-- user-name -->
-          <label for="user-name" class="label form__label label--gray control__label">Имя</label>
-          <input type="text" class="input form__input control__input input--dark" id="user-name" placeholder="Как вас зовут:">
+          <label for="user-name-control" class="label form__label label--gray control__label">Имя</label>
+          <input type="text" class="input form__input control__input input--dark" id="user-name-control" placeholder="Как вас зовут:">
         </div>
         <div class="control__input-group">
           <!-- user-phone -->
-          <label for="user-phone" class="label form__label label--gray control__label">Телефон</label>
-          <input type="tel" class="input form__input control__input input--dark" id="user-phone"
+          <label for="user-phone-control" class="label form__label label--gray control__label">Телефон</label>
+          <input type="tel" class="input form__input control__input input--dark" id="user-phone-control"
             placeholder="Ваш номер телефона:">
         </div>
         <!-- button -->
         <button class="button button--primary control__button">Отправить</button>
         <!-- policy-checkbox -->
         <div class="policy control__policy">
-          <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
-          <label for="policy-checkbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
+          <input type="checkbox" name="policy-checkbox" id="policy-checkbox-control" class="policy__checkbox" checked>
+          <label for="policy-checkbox-control" class="policy__label control__policy-label policy__label--center">Я соглашаюсь с обработкой данных</label>
         </div>
       </form>
     </div>
@@ -494,29 +494,29 @@
         <div class="col steps__col-second">
           <div class="steps-list">
             <div class="row col-second__row steps-list__wrapper">
-              <div class="steps-list__item" data-toslide="1">
+              <div class="steps-list__item steps-list__item--col-1" data-toslide="1">
                 <span class="steps-list__number">01</span>
                 <span class="steps-list__name">Выезд на замер <span class="steps-list__name--word">помещения</span></span>
               </div>
-              <div class="steps-list__item" data-toslide="2">
+              <div class="steps-list__item steps-list__item--col-2" data-toslide="2">
                 <span class="steps-list__number">02</span>
                 <span class="steps-list__name">Составление <span class="steps-list__name--word">сметы</span></span>
               </div>
-              <div class="steps-list__item" data-toslide="3">
+              <div class="steps-list__item steps-list__item--col-3" data-toslide="3">
                 <span class="steps-list__number">03</span>
                 <span class="steps-list__name">Разработка <span class="steps-list__name--word">дизайн проекта</span></span>
               </div>
             </div>
             <div class="row col-second__row steps-list__wrapper">
-              <div class="steps-list__item" data-toslide="4">
+              <div class="steps-list__item steps-list__item--col-1" data-toslide="4">
                 <span class="steps-list__number">04</span>
                 <span class="steps-list__name">Закупка расходных <span class="steps-list__name--word">материалов</span></span>
               </div>
-              <div class="steps-list__item" data-toslide="5">
+              <div class="steps-list__item steps-list__item--col-2" data-toslide="5">
                 <span class="steps-list__number">05</span>
                 <span class="steps-list__name">Ремонтно-отделочные <span class="steps-list__name--word">работы</span></span>
               </div>
-              <div class="steps-list__item" data-toslide="6">
+              <div class="steps-list__item steps-list__item--col-3" data-toslide="6">
                 <span class="steps-list__number">06</span>
                 <span class="steps-list__name">Приемка-сдача <span class="steps-list__name--word">работ</span></span>
               </div>
@@ -529,20 +529,20 @@
               <div class="swiper-slide steps__swiper-slide--img">
                 <img src="img/steps/01-sample.jpg" alt="Выезд на замеры помещения">
               </div>
-              <div class="swiper-slide swiper-slidesteps__swiper-slide--img">
-                <img src="img/steps/01-sample.jpg" alt="Составление сметы">
-              </div>
-              <div class="swiper-slide swiper-slidesteps__swiper-slide--img">
-                <img src="img/steps/01-sample.jpg" alt="Разработка дизайн проекта">
-              </div>
-              <div class="swiper-slide swiper-slidesteps__swiper-slide--img">
-                <img src="img/steps/01-sample.jpg" alt="Закупка расходных материалов">
+              <div class="swiper-slide swiper-slide steps__swiper-slide--img">
+                <img src="img/steps/02-sample.jpg" alt="Составление сметы">
               </div>
               <div class="swiper-slide swiper-slide steps__swiper-slide--img">
-                <img src="img/steps/01-sample.jpg" alt="Ремонтно-отделочные работы">
+                <img src="img/steps/03-sample.jpg" alt="Разработка дизайн проекта">
               </div>
               <div class="swiper-slide swiper-slide steps__swiper-slide--img">
-                <img src="img/steps/01-sample.jpg" alt="Приемка-сдача работ">
+                <img src="img/steps/04-sample.jpg" alt="Закупка расходных материалов">
+              </div>
+              <div class="swiper-slide swiper-slide steps__swiper-slide--img">
+                <img src="img/steps/05-sample.jpg" alt="Ремонтно-отделочные работы">
+              </div>
+              <div class="swiper-slide swiper-slide steps__swiper-slide--img">
+                <img src="img/steps/06-sample.jpg" alt="Приемка-сдача работ">
               </div>
             </div>
           </div>
@@ -552,6 +552,69 @@
   </section>
 
 </main>
+
+<section class="footer-section section--dark">
+  <div class="container footer-section__container">
+    <div class="footer-modal">
+      <h3 class="footer-modal__title">Остались вопросы?</h3>
+      <form action="#" class="form footer-modal__form">
+        <div class="footer-modal__row">
+          <div class="input-group footer-modal__input-group">
+            <!-- user-name -->
+            <label for="user-name-question" class="label form__label footer-modal__label label--light">Имя</label>
+            <input type="text" class="input form__input footer-modal__input input--light" id="user-name-question"
+              placeholder="Как вас зовут:">
+          </div>
+
+          <div class="input-group footer-modal__input-group">
+            <!-- user-phone -->
+            <label for="user-phone-question" class="label form__label footer-modal__label label--light">Телефон</label>
+            <input type="tel" class="input form__input footer-modal__input input--light" id="user-phone-question"
+              placeholder="Ваш номер телефона:">
+          </div>
+        </div>
+
+        <div class="input-group footer-modal__input-group footer-modal__input-group--last">
+          <!-- user-email -->
+          <label for="user-question" class="label form__label footer-modal__label label--light">Вопрос</label>
+          <input type="text" class="input form__input footer-modal__input input--light" id="user-question"
+            placeholder="Я хочу спросить:">
+        </div>
+
+        <!-- policy-checkbox -->
+        <div class="policy footer-modal__policy">
+          <input type="checkbox" name="policy-checkbox" id="policy-checkbox-question" class="policy__checkbox" checked>
+          <label for="policy-checkbox-question" class="policy__label policy__label--light policy__label--center footer-modal__policy-label">Я соглашаюсь с
+            обработкой данных</label>
+        </div>
+
+        <!-- button -->
+        <button class="button button--primary footer-modal__button">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="menu">
+      <div class="logo menu__logo wow slideInRight">Repair Design Project</div>
+      <nav class="nav menu__nav">
+        <a href="#" class="nav__item">Главная</a>
+        <a href="#" class="nav__item">Проекты</a>
+        <a href="#" class="nav__item">Замер</a>
+        <a href="#" class="nav__item">Команда</a>
+        <a href="#" class="nav__item">Отзывы</a>
+        <a href="#" class="nav__item nav__item--margin-none">Контакты</a>
+      </nav>
+      <div class="contacts menu__contacts">
+        <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+        <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+      </div>
+    </div>
+  </div>
+</footer>
 
 <!-- modal -->
 <div class="modal">
