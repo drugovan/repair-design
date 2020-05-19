@@ -787,6 +787,7 @@ img {
     margin-bottom: 2.21rem; }
   .control__video {
     position: relative;
+    z-index: 5;
     display: flex;
     max-width: 58.36rem;
     min-height: 31rem;
@@ -802,6 +803,7 @@ img {
       background-color: rgba(19, 19, 19, 0.8); }
   .control__text {
     max-width: 40.79rem;
+    z-index: 3;
     margin: auto;
     margin-bottom: 4.2rem;
     text-align: center;
@@ -819,6 +821,7 @@ img {
       background-color: #E3B873; }
   .control__form {
     width: 54.93rem;
+    z-index: 3;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -831,11 +834,11 @@ img {
     border-bottom: 1px solid rgba(54, 54, 54, 0.3); }
   .control__policy {
     width: 100%;
+    margin-top: 2.49rem;
     align-self: center;
     text-align: center;
     color: #181818; }
     .control__policy-label {
-      margin-top: 2.49rem;
       justify-content: center; }
   .control__input-group {
     display: flex;
@@ -845,7 +848,7 @@ img {
     .control__input-group:first-of-type {
       width: 13.15rem;
       margin-right: 4rem; }
-    .control__input-group:nth-last-of-type(2) {
+    .control__input-group:nth-last-of-type {
       width: 16.5rem; }
   .control__button {
     align-self: stretch;
@@ -875,6 +878,7 @@ img {
   .steps__row {
     width: 100%; }
   .steps__col-first {
+    overflow: hidden;
     width: 28%; }
   .steps__section-title {
     margin-bottom: 6.07rem; }
@@ -1029,7 +1033,14 @@ img {
   .nav__item {
     margin-right: 1.5rem; }
   .contacts__phone {
-    margin-right: 1.5rem; } }
+    margin-right: 1.5rem; }
+  .steps__col-first {
+    width: 35%; }
+  .steps__col-second {
+    width: 60%; }
+  .steps-list__item {
+    flex-basis: 10rem;
+    margin-right: 0; } }
 
 @media screen and (max-width: 1199px) {
   .container {
@@ -1066,11 +1077,15 @@ img {
     width: 92%; }
   .hero__instagram {
     display: none; }
+  .projects {
+    padding-top: 4rem; }
   .col-50 {
     width: 39%;
     margin-bottom: 2rem; }
   .col-img {
     width: 31.57rem; }
+  .types {
+    padding-top: 5.93rem; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -1092,7 +1107,9 @@ img {
   .section-title__heading--light {
     color: white; }
   .section-prelude__text--light {
-    color: white; } }
+    color: white; }
+  .steps {
+    display: none; } }
 
 @media screen and (max-width: 767px) {
   .container {
@@ -1115,13 +1132,62 @@ img {
     max-width: 40rem;
     font-size: 1.5rem;
     line-height: 2.04rem; }
+  .projects {
+    padding-top: 3rem; }
   .col-50 {
-    width: 100%;
-    margin-right: auto;
-    margin-bottom: 2rem; }
+    width: 70%;
+    margin-bottom: 2rem;
+    margin: auto; }
   .col-img {
-    width: 31.57rem;
-    align-self: flex-start; } }
+    margin-top: 2rem;
+    width: 31.57rem; }
+  .control {
+    background-color: #131313;
+    padding-bottom: 0; }
+    .control__text {
+      color: white; }
+    .control__label {
+      color: rgba(255, 255, 255, 0.5); }
+    .control__policy-label {
+      color: white; }
+    .control__form {
+      width: 100%;
+      flex-direction: column;
+      align-items: stretch; }
+    .control__input-group:first-of-type {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 4.5rem; }
+    .control__input-group:nth-of-type(2) {
+      width: 100%;
+      margin-bottom: 1.9rem; }
+    .control__input {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+      .control__input::-webkit-input-placeholder {
+        color: white; }
+      .control__input::-moz-placeholder {
+        color: white; }
+      .control__input:-ms-input-placeholder {
+        color: white; }
+      .control__input::-ms-input-placeholder {
+        color: white; }
+      .control__input::placeholder {
+        color: white; }
+    .control__button {
+      transform: translateY(50%);
+      border-radius: 0;
+      order: 4; }
+    .control__policy {
+      margin-top: 0;
+      margin-bottom: 2rem; }
+    .control__video {
+      min-height: 24rem;
+      background-size: cover;
+      margin-bottom: 3rem; }
+  .video {
+    width: 87%; }
+    .video__play {
+      width: 8rem; } }
 
 @media screen and (max-width: 575px) {
   .hero {
@@ -1130,8 +1196,17 @@ img {
       width: 100%; }
       .hero__button--primary {
         margin-bottom: 26px; }
+  .col-50 {
+    width: 100%;
+    margin-right: auto; }
   .col-img {
-    width: 100%; } }
+    width: 100%; }
+  .control__video {
+    min-height: 20rem; }
+  .video {
+    width: 100%; }
+    .video__play {
+      width: 7.5rem; } }
 
 @media screen and (max-height: 600px) {
   .hero__scroll-down {

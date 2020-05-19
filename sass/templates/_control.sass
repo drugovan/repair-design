@@ -6,6 +6,7 @@
     margin-bottom: 2.21rem
   &__video
     position: relative
+    z-index: 5
     display: flex
     max-width: 58.36rem
     min-height: 31rem
@@ -21,6 +22,7 @@
       background-color: rgba($dark, 0.8)
   &__text
     max-width: 40.79rem
+    z-index: 3
     margin: auto
     margin-bottom: 4.2rem
     text-align: center
@@ -38,6 +40,7 @@
       background-color: $primary
   &__form
     width: 54.93rem
+    z-index: 3
     margin: auto
     display: flex
     justify-content: space-between
@@ -50,11 +53,11 @@
     border-bottom: 1px solid rgba(54, 54, 54, 0.3)
   &__policy
     width: 100%
+    margin-top: 2.49rem
     align-self: center
     text-align: center
     color: #181818
     &-label
-      margin-top: 2.49rem
       justify-content: center
   &__input-group
     display: flex
@@ -64,7 +67,7 @@
     &:first-of-type
       width: 13.15rem
       margin-right: 4rem
-    &:nth-last-of-type(2)
+    &:nth-last-of-type
       width: 16.5rem
   &__button
     align-self: stretch

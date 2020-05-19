@@ -10,6 +10,16 @@
   .contacts
     &__phone
       margin-right: 1.5rem
+  // steps
+  .steps
+    &__col-first
+      width: 35%
+    &__col-second
+      width: 60%
+    &-list
+      &__item
+        flex-basis: 10rem;
+        margin-right: 0
 @media screen and (max-width: 1199px)
   // html
   //   font-size: 14px
@@ -56,12 +66,16 @@
     &__instagram
       display: none
   // projects
+  .projects
+    padding-top: 4rem
   .col-50
     width: 39%
     margin-bottom: 2rem
   .col-img
     width: 31.57rem
   // types
+  .types
+    padding-top: 5.93rem
   .row
     flex-direction: column
     align-items: center
@@ -90,6 +104,9 @@
     &__text
       &--light
         color: $light
+  // steps
+  .steps
+    display: none
 @media screen and ( max-width: 767px )
   .container
     width: 87%
@@ -116,13 +133,56 @@
       font-size: 1.5rem
       line-height: 2.04rem
   // projects
+  .projects
+    padding-top: 3rem
   .col-50
-    width: 100%
-    margin-right: auto
+    width: 70%
     margin-bottom: 2rem
+    margin: auto
   .col-img
+    margin-top: 2rem
     width: 31.57rem
-    align-self: flex-start
+  // control
+  .control
+    background-color: $dark
+    padding-bottom: 0
+    &__text
+      color: $light
+    &__label
+      color: rgba($light, 0.5)
+    &__policy-label
+      color: $light
+    &__form
+      width: 100%
+      flex-direction: column
+      align-items: stretch
+    &__input-group
+      &:first-of-type
+        width: 100%
+        margin-right: 0
+        margin-bottom: 4.5rem
+      &:nth-of-type(2)
+        width: 100%
+        margin-bottom: 1.9rem
+    &__input
+      border-bottom: 1px solid rgba($light, 0.7);
+      &::placeholder
+        color: $light
+    &__button
+      transform: translateY(50%)
+      border-radius: 0
+      order: 4
+    &__policy
+      margin-top: 0
+      margin-bottom: 2rem
+    &__video
+      min-height: 24rem
+      background-size: cover
+      margin-bottom: 3rem
+  .video
+    width: 87%
+    &__play
+      width: 8rem
 @media screen and ( max-width: 575px )
   // hero
   .hero
@@ -132,8 +192,20 @@
       &--primary
         margin-bottom: 26px
   // projects
+  .col-50
+    width: 100%
+    margin-right: auto
   .col-img
     width: 100%
+  //control
+  .control
+    &__video
+      min-height: 20rem
+
+  .video
+    width: 100%
+    &__play
+      width: 7.5rem
 @media screen and (max-height: 600px)
   .hero
     &__scroll-down
