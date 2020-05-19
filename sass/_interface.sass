@@ -27,8 +27,6 @@
   &--primary
     color: $primary
 .section
-  // temporally
-  padding: 60px 0
   &--dark
     background-color: $dark
   &-title
@@ -40,6 +38,7 @@
       text-transform: uppercase
       color: $light
     &__heading
+      margin-bottom: 1.3rem
       text-transform: uppercase
       font-family: 'Yeseva One', cursive
       font-size: 1.43rem
@@ -54,6 +53,10 @@
           background-color: $primary
       &--primary
         color: $primary
+    &--left
+      text-align: left
+    &--light
+      color: $light
     &__image
       display: flex
       justify-content: center
@@ -61,10 +64,10 @@
       &::before, &::after
         content: ''
         width: 32px
-        height: 2px
+        height: 1px
         background-color: $primary
         border-radius: 30px
-        margin: 0 10px
+        margin: 0 9px
   &-prelude
     margin-left: auto
     margin-right: auto
@@ -119,17 +122,22 @@
     font-size: 1.07rem
     line-height: 1.43rem
     color: rgba($light, 0.5)
+  &--gray
+    color: rgba(54, 54, 54, 0.5)
 .input
   padding-top: 0.25rem
   padding-bottom: 0.48rem
   font-size: 1.29rem
   line-height: 1.74rem
-  color: $light
   background-color: transparent
   border: none
   border-bottom: 1px solid rgba($light, 0.15)
-  &::placeholder
-    color: $light
+  &--light
+    &::placeholder
+      color: $light
+  &--dark
+    &::placeholder
+      color: $dark-text
 .policy
   &__checkbox
     opacity: 0

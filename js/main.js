@@ -76,6 +76,7 @@ $(document).ready(function () {
 // projectsSwiper
   var projectsSwiper = new Swiper('.projects__swiper-container', {
     loop: true,
+    autoHeight: true,
     navigation: {
       nextEl: '.projects__swiper-button-next',
       prevEl: '.projects__swiper-button-prev',
@@ -92,13 +93,15 @@ $(document).ready(function () {
       projectsPrev = $('.projects__swiper-button-prev'),
       projectsBullets = $('.projects__swiper-pagination');
 
-  projectsBullets.css('left', projectsPrev.width() + 10);
-  projectsNext.css('left', projectsPrev.width() + 10 + projectsBullets.width() + 10);
+  projectsBullets.css('left', projectsPrev.width() + 21);
+  projectsNext.css('left', projectsPrev.width() + 20 + projectsBullets.width() + 23);
 // ..styles for projectsSwiper pagination
 
 // stepsSwiper
   var stepsSwiper = new Swiper('.steps__swiper-container', {
     loop: true,
+    spaceBetween: 150,
+    roundLengths: true,
     navigation: {
       nextEl: '.steps__swiper-button-next',
       prevEl: '.steps__swiper-button-prev',
@@ -148,8 +151,8 @@ $(document).ready(function () {
       stepsPrev = $('.steps__swiper-button-prev'),
       stepsBullets = $('.steps__swiper-pagination');
 
-  stepsBullets.css('left', stepsPrev.width() + 10);
-  stepsNext.css('left', stepsPrev.width() + 10 + stepsBullets.width() + 10);
+  stepsBullets.css('left', stepsPrev.width() + 21);
+  stepsNext.css('left', stepsPrev.width() + 21 + stepsBullets.width() + 21);
 // ..styles for stepsSwiper pagination
 
 //swithing the slider by clicking on '.steps-list__item'
