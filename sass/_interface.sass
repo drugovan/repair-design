@@ -106,7 +106,7 @@
     position: absolute
     left: 0
     bottom: 0
-    z-index: 10
+    z-index: 15
     min-width: 16.28rem
     transform: translateY(50%)
     padding: 1rem 2.36rem
@@ -134,18 +134,24 @@
   border-bottom: 1px solid rgba($light, 0.15)
   &--light
     &::placeholder
-      color: #ffffff
+      color: $light
+      opacity: 1
     &::-moz-placeholder
-      color: #ffffff
+      color: $light
+      opacity: 1
     &:-moz-placeholder
-      color: #ffffff
+      color: $light
+      opacity: 1
   &--dark
     &::placeholder
-      color: #363636
+      color: $dark-text
+      opacity: 1
     &::-moz-placeholder
-      color: #363636
+      color: $dark-text
+      opacity: 1
     &:-moz-placeholder
-      color: #363636
+      color: $dark-text
+      opacity: 1
 .policy
   &__checkbox
     opacity: 0

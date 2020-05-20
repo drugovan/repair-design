@@ -57,8 +57,8 @@
         flex-basis: 10rem;
         margin-right: 0
   // section-footer
-  .footer-modal
-    width: 75%
+  // .footer-modal
+  //   width: 75%
   // footer
   .footer-container
     width: 95%
@@ -113,12 +113,38 @@
   // steps
   .steps
     display: none
-  // section-footer
-  .footer-modal
-    width: 85%
   // scrollup
   .scrollup
     bottom: 110px
+  // section-footer
+  .footer-section
+    background: $dark
+    background-image: none
+    &::before
+      display: none
+  .footer-modal
+    width: 100%
+    background: $dark
+    &__container
+      width: 100%
+      max-width: 100%
+    &__row
+      flex-direction: column
+      margin-bottom: 4.5rem
+    &__form
+      width: 70%
+      background-color: $dark
+    &__input-group
+      &:first-of-type
+        margin-bottom: 4.5rem
+    &__policy
+      &-label
+        margin: 0
+        justify-content: flex-start
+    &__button
+      width: 100%
+      margin: 0
+      border-radius: 0
 @media screen and ( max-width: 767px )
   .container
     width: 90%
@@ -184,11 +210,14 @@
       color: $light
       border-bottom: 1px solid rgba($light, 0.7);
       &::placeholder
-        color: #ffffff
+        color: $light
+        opacity: 1
       &::-moz-placeholder
-        color: #ffffff
+        color: $light
+        opacity: 1
       &:-moz-placeholder
-        color: #ffffff
+        color: $light
+        opacity: 1
     &__button
       transform: translateY(50%)
       border-radius: 0
@@ -204,11 +233,10 @@
     width: 87%
     &__play
       width: 8rem
-  // section-footer
-  .footer-section
-    background: $dark
+  // footer-section
   .footer-modal
-    width: 100vw
+    &__form
+      width: 100%
 @media screen and ( max-width: 575px )
   // hero
   .hero
