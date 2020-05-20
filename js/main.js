@@ -188,4 +188,43 @@ $(document).ready(function () {
   });
 // ..counter for stepsSlider
 
+
+
+var windowHeight = $(window).height();
+
+$(document).on('scroll', function () {
+  $('.footer-modal').each(function () {
+    var self = $(this),
+    height = self.offset().top + self.height() / 2 - windowHeight / 2;
+    if ($(document).scrollTop() + windowHeight >= height) {
+      self.addClass('appearance')
+    }
+  });
+});
+
+// var block_show = false;
+
+// function scrollTracking() {
+//   if (block_show) {
+//     return false;
+//   }
+
+//   var wt = $(window).scrollTop();
+//   var wh = $(window).height();
+//   var et = $('.footer-modal').offset().top;
+//   var eh = $('.footer-modal').outerHeight();
+//   var dh = $(document).height();
+
+//   if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
+//     block_show = true;
+//   }
+// }
+
+// $(window).scroll(function () {
+//   scrollTracking();
+// });
+// $(document).ready(function () {
+//   scrollTracking();
+// });
+
 });
