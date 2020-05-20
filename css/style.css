@@ -460,6 +460,10 @@ template {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column; }
   .input--light::-webkit-input-placeholder {
     color: white;
     opacity: 1; }
@@ -584,6 +588,16 @@ body {
 
 img {
   max-width: 100%; }
+
+div.invalid {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: #ff3300;
+  padding-top: 4px; }
+
+input.invalid {
+  border-bottom: 1px solid #ff3300; }
 
 .header {
   position: fixed;
@@ -868,8 +882,6 @@ img {
     .control__policy-label {
       margin-left: -4.6rem; }
   .control__input-group {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
     .control__input-group:first-of-type {
@@ -1027,7 +1039,7 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 70.30%;
+  width: 71.4%;
   margin: auto;
   padding-top: 2.2rem;
   padding-bottom: 2.46rem;
@@ -1052,7 +1064,12 @@ img {
     line-height: 1.28rem; }
   .footer-modal__input {
     padding-top: 0;
-    padding-bottom: 0.39rem; }
+    padding-bottom: 0.39rem;
+    color: white; }
+    .footer-modal__input-group {
+      flex-basis: 44.5%; }
+      .footer-modal__input-group--last {
+        margin-bottom: 3.32rem; }
   .footer-modal__policy {
     margin-bottom: 3.66rem; }
     .footer-modal__policy-label {
@@ -1062,11 +1079,7 @@ img {
     margin: auto;
     padding: 1.23rem 4.45rem;
     border-radius: none; }
-  .footer-modal__input-group {
-    flex-basis: 44.5%;
-    display: flex;
-    flex-direction: column; }
-    .footer-modal__input-group--last {
+    .footer-modal__button--last {
       margin-bottom: 3.32rem; }
 
 .footer {
@@ -1119,10 +1132,11 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3rem;
     color: white; }
-    .modal__input:last-of-type {
-      margin-bottom: 1.14rem; }
+    .modal__input-group {
+      margin-bottom: 3rem; }
+      .modal__input-group:last-of-type {
+        margin-bottom: 1.14rem; }
   .modal__policy {
     margin-bottom: 2.75rem; }
   .modal__button {

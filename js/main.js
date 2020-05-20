@@ -189,7 +189,7 @@ $(document).ready(function () {
 // ..counter for stepsSlider
 
 
-
+// animation for .footer-modal
 var windowHeight = $(window).height();
 
 $(document).on('scroll', function () {
@@ -201,30 +201,100 @@ $(document).on('scroll', function () {
     }
   });
 });
+// ..animation for .footer-modal
 
-// var block_show = false;
+//  Validate modal__form
+$(".modal__form").validate({
+  errorClass: "invalid",
+  errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      // compound rule
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
 
-// function scrollTracking() {
-//   if (block_show) {
-//     return false;
-//   }
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Не менее 2 символов",
+        maxlength: "Не более 15 символов",
+      },
 
-//   var wt = $(window).scrollTop();
-//   var wh = $(window).height();
-//   var et = $('.footer-modal').offset().top;
-//   var eh = $('.footer-modal').outerHeight();
-//   var dh = $(document).height();
+      userPhone: "Заполните поле",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      },
 
-//   if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
-//     block_show = true;
-//   }
-// }
+    }
+  });
+//  ..Validate modal__form
 
-// $(window).scroll(function () {
-//   scrollTracking();
-// });
-// $(document).ready(function () {
-//   scrollTracking();
-// });
+  //  Validate footer-modal__form
+  $(".footer-modal__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userNameQuestion: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      // compound rule
+      userPhoneQuestion: "required",
+      userQuestion: "required",
+    },
 
+    messages: {
+      userNameQuestion: {
+        required: "Заполните поле",
+        minlength: "Не менее 2 символов",
+        maxlength: "Не более 15 символов",
+      },
+
+      userPhoneQuestion: "Заполните поле",
+      userQuestion: "Введите вопрос",
+    }
+  });
+//  ..footer-modal__form
+
+  //  Validate control__form
+  $(".control__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userNameControl: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      // compound rule
+      userPhoneControl: "required",
+    },
+
+    messages: {
+      userNameControl: {
+        required: "Заполните поле",
+        minlength: "Не менее 2 символов",
+        maxlength: "Не более 15 символов",
+      },
+
+      userPhoneControl: "Заполните поле",
+    }
+  });
+//  ..footer-control__form
+
+// Mask phone
+  $('[type=tel]').mask('+7 (000) 000-00-00', { placeholder: "+7 (___) ___-__-__"});
 });
