@@ -18,10 +18,9 @@
   &__map
     display: block
     height: 33.21rem
-    width: 66.07rem
+    width: 100%
+    max-width: 66.07rem
     margin: auto
-    // display: flex
-    // justify-content: center
 .footer-modal
   display: flex
   position: relative
@@ -80,9 +79,12 @@
   margin-bottom: 3.09rem
   &__item
     font-family: 'Yeseva One', cursive
-    display: block
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
     margin: 0 auto
-    width: 42.07rem
+    // max-width: 42.07rem
+    width: 100%
     font-size: 1.43rem
     line-height: 2rem
     text-align: center
@@ -96,14 +98,15 @@
     display: flex
     justify-content: center
     &__item
-      // display: inline-block
       list-style: none
-      width: 2rem
-      height: 2rem
+      width: 28px
+      height: 28px
       border-radius: 50%
-
     &__address
       margin-right: 15px
       background: $primary url('../img/icon/footer-section/post.svg') no-repeat center
     &__tel
       background: $primary url('../img/icon/footer-section/instagram.svg') no-repeat center
+.wrapper
+  display: flex
+  flex-direction: column

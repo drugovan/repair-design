@@ -334,14 +334,26 @@ $(".modal__form").validate({
 
 //  Map
   ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-        center: [47.244729, 39.723187],
-        zoom: 18
-      }, {
-        searchControlProvider: 'yandex#search'
-      }),
 
-      // Создаём макет содержимого.
+    // Создаём макет содержимого.
+    var width = $('.footer-section__map').width;
+    var height = $('.footer-section__map').height;
+
+    if (width > 690) {
+      var zoomval = 18;
+    } else {
+      var zoomval = 17;
+    };
+
+    var myMap = new ymaps.Map('map', {
+      center: [47.244729, 39.723187],
+      zoom: zoomval
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+
+
+
       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
         '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
       ),
@@ -361,9 +373,14 @@ $(".modal__form").validate({
         // её "ножки" (точки привязки).
         iconImageOffset: [-5, -38]
       });
-
-
+    myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects
       .add(myPlacemark);
+
+    // Изменим размеры контейнера карты
+    myMap.container.getElement().style.width = '100%';
+    myMap.container.getElement().style.height = '100%';
+    // Инициируем пересчет размеров
+    myMap.container.fitToViewport();
     });
 });
