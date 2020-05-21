@@ -76,6 +76,7 @@ $(document).ready(function () {
 // projectsSwiper
   var projectsSwiper = new Swiper('.projects__swiper-container', {
     loop: true,
+    spaceBetween: 150,
     autoHeight: true,
     navigation: {
       nextEl: '.projects__swiper-button-next',

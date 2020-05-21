@@ -1,7 +1,11 @@
 .customers
   padding-top: 1rem
   padding-bottom: 27.2rem
+  &__container
+    width: 90%
   &__row
+    justify-content: center
+    align-items: stretch
   &__col
     width: 26.86rem
     margin-right: 3.86rem
@@ -16,6 +20,7 @@
     margin-bottom: 3.4rem
   &-card
     position: relative
+    height: 100%
     padding: 1.71rem 2.28rem 4.95rem 1.43rem
     box-shadow: 0px 10px 50px rgba($dark, 0.04);
     &__heading
@@ -46,12 +51,10 @@
       align-items: center
       &-square
         min-width: 9.65rem
-        // flex-basis: 9.65rem
         padding: 0.79rem 1.3rem 0.83rem 1.24rem
         border-right: 1px solid $light
       &-days
         min-width: 11.33
-        // flex-basis: 11.33rem
         text-transform: none
         padding: 0.79rem 1.76rem 0.83rem 1.1rem
         &--short
