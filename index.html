@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=2202e680-e3f8-4ee2-a637-081b4b83d08e&lang=ru_RU" type="text/javascript"></script>
   <title>Document</title>
 </head>
 <body>
@@ -720,45 +721,68 @@
 
   <section class="footer-section section--dark">
     <div class="container footer-section__container">
-      <div class="footer-modal">
-        <h3 class="footer-modal__title">Остались вопросы?</h3>
-        <form action="#" class="form footer-modal__form">
-          <div class="footer-modal__row">
-            <div class="input-group footer-modal__input-group">
-              <!-- user-name -->
-              <label for="user-name-question" class="label form__label footer-modal__label label--light">Имя</label>
-              <input type="text" name="userNameQuestion" class="input form__input footer-modal__input input--light" id="user-name-question"
-                placeholder="Как вас зовут:">
+      <div class="footer-section__wrapper">
+        <div class="footer-modal">
+          <h3 class="footer-modal__title">Остались вопросы?</h3>
+          <form action="#" class="form footer-modal__form">
+            <div class="footer-modal__row">
+              <div class="input-group footer-modal__input-group">
+                <!-- user-name -->
+                <label for="user-name-question" class="label form__label footer-modal__label label--light">Имя</label>
+                <input type="text" name="userNameQuestion" class="input form__input footer-modal__input input--light"
+                  id="user-name-question" placeholder="Как вас зовут:">
+              </div>
+
+              <div class="input-group footer-modal__input-group">
+                <!-- user-phone -->
+                <label for="user-phone-question" class="label form__label footer-modal__label label--light">Телефон</label>
+                <input type="tel" name="userPhoneQuestion" class="input form__input footer-modal__input input--light"
+                  id="user-phone-question" placeholder="Ваш номер телефона:">
+              </div>
             </div>
 
-            <div class="input-group footer-modal__input-group">
-              <!-- user-phone -->
-              <label for="user-phone-question" class="label form__label footer-modal__label label--light">Телефон</label>
-              <input type="tel" name="userPhoneQuestion" class="input form__input footer-modal__input input--light" id="user-phone-question"
-                placeholder="Ваш номер телефона:">
+            <div class="input-group footer-modal__input-group footer-modal__input-group--last">
+              <!-- user-email -->
+              <label for="user-question" class="label form__label footer-modal__label label--light">Вопрос</label>
+              <input type="text" name="userQuestion" class="input form__input footer-modal__input input--light"
+                id="user-question" placeholder="Я хочу спросить:">
             </div>
-          </div>
 
-          <div class="input-group footer-modal__input-group footer-modal__input-group--last">
-            <!-- user-email -->
-            <label for="user-question" class="label form__label footer-modal__label label--light">Вопрос</label>
-            <input type="text" name="userQuestion" class="input form__input footer-modal__input input--light" id="user-question"
-              placeholder="Я хочу спросить:">
-          </div>
+            <!-- policy-checkbox -->
+            <div class="policy footer-modal__policy">
+              <input type="checkbox" name="policyCheckboxQuestion" id="policy-checkbox-question" class="policy__checkbox"
+                checked>
+              <label for="policy-checkbox-question"
+                class="policy__label policy__label--light policy__label--center footer-modal__policy-label">Я соглашаюсь с
+                обработкой данных</label>
+            </div>
 
-          <!-- policy-checkbox -->
-          <div class="policy footer-modal__policy">
-            <input type="checkbox" name="policyCheckboxQuestion" id="policy-checkbox-question" class="policy__checkbox" checked>
-            <label for="policy-checkbox-question" class="policy__label policy__label--light policy__label--center footer-modal__policy-label">Я соглашаюсь с
-              обработкой данных</label>
+            <!-- button -->
+            <button class="button button--primary footer-modal__button">Отправить</button>
+          </form>
+        </div>
+        <div class="info">
+          <span class="info__item info__address">Ростов на дону, Торговый центр Plaza</span>
+          <span class="info__item info__tel">Прямой телефон +7 (999) 768 32 99</span>
+          <div class="info-link">
+            <a href="#" class="info-link__item info-link__address"></a>
+            <a href="#" class="info-link__item info-link__tel"></a>
           </div>
+        </div>
 
-          <!-- button -->
-          <button class="button button--primary footer-modal__button">Отправить</button>
-        </form>
+        <map name="map" id="map" class="map footer-section__map">
+          <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.555126231896!2d39.72155944376606!3d47.24484722089104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2sru!4v1590088230115!5m2!1sru!2sru"
+            width="925" height="465" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe> -->
+          <!-- <script type="text/javascript" charset="utf-8" async
+            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aca91f11ee57f1d6ae0f9097846692d6260cf980ec91dc66fea18924141b0322a&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false">
+          </script> -->
+        </map>
       </div>
     </div>
   </section>
+
 </main>
 
 

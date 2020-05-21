@@ -12,6 +12,16 @@
     height: 100%
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%)
     z-index: 10
+  &__wrapper
+    position: relative
+    z-index: 15
+  &__map
+    display: block
+    height: 33.21rem
+    width: 66.07rem
+    margin: auto
+    // display: flex
+    // justify-content: center
 .footer-modal
   display: flex
   position: relative
@@ -20,6 +30,7 @@
   align-items: center
   width: 71.4%
   margin: auto
+  margin-bottom: 3.72rem
   padding-top: 2.2rem
   padding-bottom: 2.46rem
   background-color: $black
@@ -62,3 +73,37 @@
     border-radius: none
     &--last
       margin-bottom: 3.32rem
+.info
+  position: relative
+  left: -2px
+  margin-top: -16rem
+  margin-bottom: 3.09rem
+  &__item
+    font-family: 'Yeseva One', cursive
+    display: block
+    margin: 0 auto
+    width: 42.07rem
+    font-size: 1.43rem
+    line-height: 2rem
+    text-align: center
+    text-transform: uppercase
+    color: $primary
+    &:last-of-type
+      margin-bottom: 1.7rem
+  &-link
+    position: relative
+    left: -2px
+    display: flex
+    justify-content: center
+    &__item
+      // display: inline-block
+      list-style: none
+      width: 2rem
+      height: 2rem
+      border-radius: 50%
+
+    &__address
+      margin-right: 15px
+      background: $primary url('../img/icon/footer-section/post.svg') no-repeat center
+    &__tel
+      background: $primary url('../img/icon/footer-section/instagram.svg') no-repeat center

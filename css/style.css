@@ -1177,6 +1177,14 @@ input.invalid {
     height: 100%;
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
     z-index: 10; }
+  .footer-section__wrapper {
+    position: relative;
+    z-index: 15; }
+  .footer-section__map {
+    display: block;
+    height: 33.21rem;
+    width: 66.07rem;
+    margin: auto; }
 
 .footer-modal {
   display: flex;
@@ -1186,6 +1194,7 @@ input.invalid {
   align-items: center;
   width: 71.4%;
   margin: auto;
+  margin-bottom: 3.72rem;
   padding-top: 2.2rem;
   padding-bottom: 2.46rem;
   background-color: #181818;
@@ -1228,6 +1237,39 @@ input.invalid {
     border-radius: none; }
     .footer-modal__button--last {
       margin-bottom: 3.32rem; }
+
+.info {
+  position: relative;
+  left: -2px;
+  margin-top: -16rem;
+  margin-bottom: 3.09rem; }
+  .info__item {
+    font-family: 'Yeseva One', cursive;
+    display: block;
+    margin: 0 auto;
+    width: 42.07rem;
+    font-size: 1.43rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873; }
+    .info__item:last-of-type {
+      margin-bottom: 1.7rem; }
+  .info-link {
+    position: relative;
+    left: -2px;
+    display: flex;
+    justify-content: center; }
+    .info-link__item {
+      list-style: none;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%; }
+    .info-link__address {
+      margin-right: 15px;
+      background: #E3B873 url("../img/icon/footer-section/post.svg") no-repeat center; }
+    .info-link__tel {
+      background: #E3B873 url("../img/icon/footer-section/instagram.svg") no-repeat center; }
 
 .footer {
   background-color: #131313;
