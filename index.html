@@ -222,7 +222,7 @@
       <div class="video control__video">
         <img src="img/icon/control/video-play.svg" alt="Play" class="video__play">
       </div>
-      <p class="control__text wow slideInDown">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В
+      <p class="section__text control__text wow slideInDown">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В
         любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую
         трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.
       </p>
@@ -243,7 +243,7 @@
         <button class="button button--primary control__button">Отправить</button>
         <!-- policy-checkbox -->
         <div class="policy control__policy">
-          <input type="checkbox" name="policy-checkbox" id="policy-checkbox-control" class="policy__checkbox" checked>
+          <input type="checkbox" name="policyCheckboxControl" id="policy-checkbox-control" class="policy__checkbox" checked>
           <label for="policy-checkbox-control" class="policy__label control__policy-label policy__label--center">Я соглашаюсь с обработкой данных</label>
         </div>
       </form>
@@ -281,7 +281,7 @@
                 <li class="card__item">Замена розеток и выключателей</li>
                 <li class="card__item">Замена дверей</li>
               </ul>
-              <span class="card__pricetag types__pricetag">От 900 руб / м<sup><small>2</small></sup></span>
+              <span class="card__tag card__pricetag types__pricetag">От 900 руб / м<sup><small>2</small></sup></span>
             </div>
           </div>
         </div>
@@ -301,7 +301,7 @@
                 <li class="card__item">Замена розеток и выключателей</li>
                 <li class="card__item">Замена дверей</li>
               </ul>
-              <span class="card__pricetag types__pricetag">От 1800 руб / м<sup><small>2</small></sup></span>
+              <span class="card__tag card__pricetag types__pricetag">От 1800 руб / м<sup><small>2</small></sup></span>
             </div>
           </div>
         </div>
@@ -321,7 +321,7 @@
                 <li class="card__item">Замена розеток и выключателей</li>
                 <li class="card__item">Замена дверей</li>
               </ul>
-              <span class="card__pricetag types__pricetag">От 4000 руб / м<sup><small>2</small></sup></span>
+              <span class="card__tag card__pricetag types__pricetag">От 4000 руб / м<sup><small>2</small></sup></span>
             </div>
           </div>
         </div>
@@ -335,14 +335,14 @@
       <!-- section-title -->
       <div class="section-title design__section-title">
         <!-- heading -->
-        <h2 class="section-title__heading section-title__heading--light">Дизайн проект</h2>
+        <h2 class="section-title__heading">Дизайн проект</h2>
         <!-- image -->
         <div class="section-title__image">
           <img src="img/icon/design/design.svg" alt="Дизайн проект">
         </div>
       </div>
       <div class="section-prelude design__section-prelude">
-        <p class="section-prelude__text section-prelude__text--light">Дизайн-проект не только помогает сделать ремонт вашей квартиры более современным, но и значительно удешевляет
+        <p class="section-prelude__text">Дизайн-проект не только помогает сделать ремонт вашей квартиры более современным, но и значительно удешевляет
           материалы и сокращает время ремонтных работ</p>
       </div>
 
@@ -361,7 +361,7 @@
                 <li class="card__item">Планировка мебели</li>
                 <li class="card__item">Сантехнический план</li>
               </ul>
-              <span class="card__pricetag">150 руб / м<sup><small>2</small></sup></span>
+              <span class="card__tag card__pricetag">150 руб / м<sup><small>2</small></sup></span>
             </div>
           </div>
         </div>
@@ -381,7 +381,7 @@
                 <li class="card__item">План электрики</li>
                 <li class="card__item">План света</li>
               </ul>
-              <span class="card__pricetag">400 руб / м<sup><small>2</small></sup></span>
+              <span class=" card__tag card__pricetag">400 руб / м<sup><small>2</small></sup></span>
             </div>
           </div>
         </div>
@@ -406,7 +406,7 @@
                 <li class="card__item">Выезд на подбор материалов</li>
                 <li class="card__item">Выбор мебели</li>
               </ul>
-              <span class="card__pricetag">900 руб / м<sup><small>2</small></sup></span>
+              <span class="card__tag card__pricetag">900 руб / м<sup><small>2</small></sup></span>
             </div>
           </div>
         </div>
@@ -550,49 +550,117 @@
     </div>
   </section>
 
+  <section class="section team">
+    <div class="container">
+      <div class="section-title team__section-title section-title--light">
+        <!-- heading -->
+        <h2 class="section-title__heading team__heading section-title__heading--light">Наша команда</h2>
+        <!-- image -->
+        <div class="section-title__image">
+          <img src="img/icon/team/team-title.svg" alt="Онлайн контроль">
+        </div>
+      </div>
+      <div class="section-prelude team__section-prelude">
+        <p class="section-prelude__text section-prelude__text--light">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
+      </div>
+
+      <!-- row -->
+      <div class="row team__row">
+        <!-- 01  team-card -->
+        <div class="team__col team__col--first">
+          <!-- card -->
+          <div class="card team-card team-card--first">
+            <div class="card__tag team-card__imagetag">
+              <img src="img/icon/team/01-team.svg" alt="Наша команда">
+            </div>
+            <img src="img/team/01-team.jpg" alt="Наша команда" class="card__image">
+            <div class="card__text team-card__text">
+              <h3 class="card__title team-card__title team-card__title--black">Алексей Колмаков</h3>
+              <p class="card__name team-card__name">Проектный менеджер</p>
+              <span class="card__tag team-card__tag">Опыт работы 8 лет</span>
+            </div>
+          </div>
+        </div>
+        <!-- 02  team-card-->
+        <div class="team__col">
+          <!-- card -->
+          <div class="card team-card">
+            <div class="card__tag team-card__imagetag">
+              <img src="img/icon/team/02-team.svg" alt="Наша команда">
+            </div>
+            <img src="img/team/02-team.jpg" alt="Наша команда" class="card__image">
+            <div class="card__text team-card__text">
+              <h3 class="card__title team-card__title team-card__title--black">Алиса Сухорукова</h3>
+              <p class="card__name team-card__name">Дизайнер</p>
+              <span class="card__tag team-card__tag">Опыт работы 6 лет</span>
+            </div>
+          </div>
+        </div>
+        <!-- 03  team-card -->
+        <div class="team__col team__col--last">
+          <!-- card -->
+          <div class="card team-card team-card--last">
+            <div class="card__tag team-card__imagetag">
+              <img src="img/icon/team/03-team.svg" alt="Наша команда">
+            </div>
+            <img src="img/team/03-team.jpg" alt="Наша команда" class="card__image">
+            <div class="card__text team-card__text team-card__text--last">
+              <h3 class="card__title team-card__title team-card__title--black">Давид Волынев</h3>
+              <p class="card__name team-card__name">Бригадир</p>
+              <span class="card__tag team-card__tag">Опыт работы 7 лет</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="section__text team__text wow slideInDown">Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет
+      гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.</p>
+    </div>
+
+  </section>
+
+  <section class="footer-section section--dark">
+    <div class="container footer-section__container">
+      <div class="footer-modal">
+        <h3 class="footer-modal__title">Остались вопросы?</h3>
+        <form action="#" class="form footer-modal__form">
+          <div class="footer-modal__row">
+            <div class="input-group footer-modal__input-group">
+              <!-- user-name -->
+              <label for="user-name-question" class="label form__label footer-modal__label label--light">Имя</label>
+              <input type="text" name="userNameQuestion" class="input form__input footer-modal__input input--light" id="user-name-question"
+                placeholder="Как вас зовут:">
+            </div>
+
+            <div class="input-group footer-modal__input-group">
+              <!-- user-phone -->
+              <label for="user-phone-question" class="label form__label footer-modal__label label--light">Телефон</label>
+              <input type="tel" name="userPhoneQuestion" class="input form__input footer-modal__input input--light" id="user-phone-question"
+                placeholder="Ваш номер телефона:">
+            </div>
+          </div>
+
+          <div class="input-group footer-modal__input-group footer-modal__input-group--last">
+            <!-- user-email -->
+            <label for="user-question" class="label form__label footer-modal__label label--light">Вопрос</label>
+            <input type="text" name="userQuestion" class="input form__input footer-modal__input input--light" id="user-question"
+              placeholder="Я хочу спросить:">
+          </div>
+
+          <!-- policy-checkbox -->
+          <div class="policy footer-modal__policy">
+            <input type="checkbox" name="policyCheckboxQuestion" id="policy-checkbox-question" class="policy__checkbox" checked>
+            <label for="policy-checkbox-question" class="policy__label policy__label--light policy__label--center footer-modal__policy-label">Я соглашаюсь с
+              обработкой данных</label>
+          </div>
+
+          <!-- button -->
+          <button class="button button--primary footer-modal__button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 
-<section class="footer-section section--dark">
-  <div class="container footer-section__container">
-    <div class="footer-modal">
-      <h3 class="footer-modal__title">Остались вопросы?</h3>
-      <form action="#" class="form footer-modal__form">
-        <div class="footer-modal__row">
-          <div class="input-group footer-modal__input-group">
-            <!-- user-name -->
-            <label for="user-name-question" class="label form__label footer-modal__label label--light">Имя</label>
-            <input type="text" name="userNameQuestion" class="input form__input footer-modal__input input--light" id="user-name-question"
-              placeholder="Как вас зовут:">
-          </div>
-
-          <div class="input-group footer-modal__input-group">
-            <!-- user-phone -->
-            <label for="user-phone-question" class="label form__label footer-modal__label label--light">Телефон</label>
-            <input type="tel" name="userPhoneQuestion" class="input form__input footer-modal__input input--light" id="user-phone-question"
-              placeholder="Ваш номер телефона:">
-          </div>
-        </div>
-
-        <div class="input-group footer-modal__input-group footer-modal__input-group--last">
-          <!-- user-email -->
-          <label for="user-question" class="label form__label footer-modal__label label--light">Вопрос</label>
-          <input type="text" name="userQuestion" class="input form__input footer-modal__input input--light" id="user-question"
-            placeholder="Я хочу спросить:">
-        </div>
-
-        <!-- policy-checkbox -->
-        <div class="policy footer-modal__policy">
-          <input type="checkbox" name="policy-checkbox" id="policy-checkbox-question" class="policy__checkbox" checked>
-          <label for="policy-checkbox-question" class="policy__label policy__label--light policy__label--center footer-modal__policy-label">Я соглашаюсь с
-            обработкой данных</label>
-        </div>
-
-        <!-- button -->
-        <button class="button button--primary footer-modal__button">Отправить</button>
-      </form>
-    </div>
-  </div>
-</section>
 
 <!-- footer -->
 <footer class="footer">
@@ -641,7 +709,7 @@
       </div>
       <!-- policy-checkbox -->
       <div class="policy modal__policy">
-        <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox" checked>
+        <input type="checkbox" name="policyCheckbox" id="policy-checkbox" class="policy__checkbox" checked>
         <label for="policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
       </div>
       <!-- button -->

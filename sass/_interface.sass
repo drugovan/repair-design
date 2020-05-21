@@ -29,6 +29,21 @@
 .section
   &--dark
     background-color: $dark
+  &__text
+    margin: auto
+    text-align: center
+    font-size: 1.43rem
+    line-height: 2.43rem
+    color: $dark-text
+    &::before
+      content: ''
+      display: block
+      width: 3.93rem
+      height: 2px
+      margin: auto
+      margin-bottom: 2rem
+      border-radius: 30px
+      background-color: $primary
   &-title
     text-align: center
     &__name
@@ -72,10 +87,12 @@
     margin-left: auto
     margin-right: auto
     &__text
-    font-size: 1.43rem
-    line-height: 1.93rem
-    text-align: center
-    color: $dark-text
+      font-size: 1.43rem
+      line-height: 1.93rem
+      text-align: center
+      color: $dark-text
+      &--light
+        color: $light
 .card
   &__image
     width: 100%
@@ -102,21 +119,22 @@
     font-size: 1.07rem
     line-height: 1.83rem
     color: $secondary
-  &__pricetag
+  &__tag
     position: absolute
     left: 0
     bottom: 0
     z-index: 15
-    min-width: 16.28rem
     transform: translateY(50%)
-    padding: 1rem 2.36rem
     font-family: 'Yeseva One', cursive
-    font-size: 1.29rem
-    line-height:  1.83rem
     text-transform: uppercase
     color: $light
     background-color: $primary
-    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3)
+  &__pricetag
+    min-width: 16.28rem
+    padding: 1rem 2.36rem
+    font-size: 1.29rem
+    line-height:  1.83rem
 .label
   &--light
     font-size: 1.07rem

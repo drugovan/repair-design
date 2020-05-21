@@ -9,8 +9,8 @@
       margin-right: 1.5rem
 
 @media screen and (max-width: 1199px)
-  // html
-  //   font-size: 14px
+  html
+    font-size: 14px
   .container
     width: 92%
   // header
@@ -49,13 +49,21 @@
     &__col-first
       width: 35%
     &__col-second
-      width: 60%
-    // steps
-  .steps
+      width: 63%
     &-list
       &__item
         flex-basis: 10rem;
+        margin-right: 9rem
+        &--col-3
+  .team
+    &__col
+      margin-right: 4.5rem
+      &--last
         margin-right: 0
+    &-card
+      max-width: 17rem
+      &__name
+        font-size: 1.2rem
   // section-footer
   // .footer-modal
   //   width: 75%
@@ -79,9 +87,14 @@
     margin-bottom: 2rem
   .col-img
     width: 31.57rem
+  // control
+  .control
+    padding-bottom: 0
   // types
   .types
     padding-top: 5.93rem
+    &__section-title
+      color: $black
   .row
     flex-direction: column
     align-items: center
@@ -101,21 +114,39 @@
       font-size: 1.29rem
   // design
   .design
+    padding-top: 9rem
     background-color: $dark
-  .section-title
-    &__heading
-      &--light
-        color: $light
+    &__section-title
+      color: $light
   .section-prelude
     &__text
-      &--light
-        color: $light
+      color: $light
   // steps
   .steps
     display: none
-  // scrollup
-  .scrollup
-    bottom: 110px
+  // team
+  .team
+    margin-top: 0
+    background-color: $dark
+    &__col
+      display: flex
+      margin: 0
+      &--last
+        width: 100%
+    &-card
+      max-width: 19.45rem
+      &--last
+        margin: auto
+      &__text
+        &--last
+          margin-bottom: 0
+    &__text
+      color: $light
+    &__row
+      width: 100%
+      flex-direction: row
+      justify-content: space-around
+      flex-wrap: wrap
   // section-footer
   .footer-section
     background: $dark
@@ -145,6 +176,9 @@
       width: 100%
       margin: 0
       border-radius: 0
+  // scrollup
+  .scrollup
+    bottom: 110px
 @media screen and ( max-width: 767px )
   .container
     width: 90%
@@ -233,6 +267,25 @@
     width: 87%
     &__play
       width: 8rem
+  // team
+  .team
+    padding-bottom: 3rem
+    margin-bottom: 0
+    &-card
+      max-width: 24.21rem
+    &__text
+      display: none
+    &__row
+      width: 100%
+      flex-direction: column
+      align-items: center
+    &__col
+      &--last
+        width: auto
+  .card
+    &__text
+      &--last
+        margin-bottom: 0
   // footer-section
   .footer-modal
     &__form
@@ -267,7 +320,17 @@
   .control
     &__video
       min-height: 20rem
+  // team
+  .team
+    &-card
+      max-width: 21.79rem
+      &--last
+        margin: 0
+    &__col
+      align-self: flex-end
 @media screen and ( max-width: 390px )
+  .container
+    width: 85%
   .control
     &__video
       min-height: 17rem
