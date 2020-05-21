@@ -18,7 +18,13 @@ div
     padding-top: 4px
 input
   &.invalid
-      border-bottom: 1px solid #ff3300
-
+    border-bottom: 1px solid #ff3300
+    & + .policy__label
+      &::before
+        content: ''
+        border: 1.5px solid #ff3300
+      &::after
+        content: '*'
+        color: #ff3300
 
 

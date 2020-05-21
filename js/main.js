@@ -219,7 +219,8 @@ $(".modal__form").validate({
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policyCheckbox: "required"
     },
 
     messages: {
@@ -235,7 +236,17 @@ $(".modal__form").validate({
         email: "Введите корректный email"
       },
 
+      policyCheckbox: " "
+    },
+
+    errorPlacement: function (error, element) {
+      if (element.attr("name") == "policyCheckbox") {
+        error.appendTo(".policy__label");
+      } else {
+        error.insertAfter(element);
     }
+  }
+
   });
 //  ..Validate modal__form
 
@@ -253,6 +264,7 @@ $(".modal__form").validate({
       // compound rule
       userPhoneQuestion: "required",
       userQuestion: "required",
+      policyCheckboxQuestion: "required",
     },
 
     messages: {
@@ -264,7 +276,17 @@ $(".modal__form").validate({
 
       userPhoneQuestion: "Заполните поле",
       userQuestion: "Введите вопрос",
+      policyCheckboxQuestion: " "
+    },
+
+    errorPlacement: function (error, element) {
+      if (element.attr("name") == "policyCheckboxQuestion") {
+        error.appendTo(".footer-modal__policy-label");
+      } else {
+        error.insertAfter(element);
+      }
     }
+
   });
 //  ..footer-modal__form
 
@@ -281,6 +303,7 @@ $(".modal__form").validate({
       },
       // compound rule
       userPhoneControl: "required",
+      policyCheckboxControl: "required"
     },
 
     messages: {
@@ -291,7 +314,17 @@ $(".modal__form").validate({
       },
 
       userPhoneControl: "Заполните поле",
+      policyCheckboxControl: " "
+    },
+
+    errorPlacement: function (error, element) {
+      if (element.attr("name") == "policyCheckboxControl") {
+        error.appendTo(".control__form");
+      } else {
+        error.insertAfter(element);
+      }
     }
+
   });
 //  ..footer-control__form
 
