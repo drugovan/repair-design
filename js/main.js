@@ -329,5 +329,5 @@ $(".modal__form").validate({
 //  ..footer-control__form
 
 // Mask phone
-  $('[type=tel]').mask('+7 (000) 000-00-00', { placeholder: "+7 (___) ___-__-__"});
+  $('[type=tel]').mask('+7(000) 000-00-00');
 });

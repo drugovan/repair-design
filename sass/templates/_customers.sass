@@ -1,0 +1,71 @@
+.customers
+  padding-top: 1rem
+  padding-bottom: 27.2rem
+  &__row
+  &__col
+    width: 26.86rem
+    margin-right: 3.86rem
+    &--last
+      margin-right: 0
+  &__section-title
+    margin-bottom: 1.3rem
+  &__heading
+    color: $black
+  &__section-prelude
+    width: 25.71rem
+    margin-bottom: 3.4rem
+  &-card
+    position: relative
+    padding: 1.71rem 2.28rem 4.95rem 1.43rem
+    box-shadow: 0px 10px 50px rgba($dark, 0.04);
+    &__heading
+      display: flex
+      align-items: center
+      margin-bottom: 1rem
+      &-img
+        width: 5.43rem
+        height: 5.43rem
+        object-fit: cover
+        border-radius: 50%
+        margin-right: 1.64rem
+      &-text
+        font-family: 'Yeseva One', cursive
+        font-weight: normal
+        font-size: 1.29rem
+        line-height: 1.64rem
+        color: $black
+        &--line
+          display: block
+    &__comment
+      font-size: 1.07rem
+      line-height: 1.97rem
+      color: $secondary
+    &__tag
+      position: relative
+      display: flex
+      align-items: center
+      &-square
+        min-width: 9.65rem
+        // flex-basis: 9.65rem
+        padding: 0.79rem 1.3rem 0.83rem 1.24rem
+        border-right: 1px solid $light
+      &-days
+        min-width: 11.33
+        // flex-basis: 11.33rem
+        text-transform: none
+        padding: 0.79rem 1.76rem 0.83rem 1.1rem
+        &--short
+          padding-right: 1.38rem
+      &-icon
+      &-text
+        font-size: 1.21rem
+        line-height: 1.71rem
+.tag-square
+  &__icon
+    margin-right: 1.1rem
+.tag-days
+  &__icon
+    margin-right: 1.07rem
+.tags-wrapper
+  position: absolute
+  display: flex

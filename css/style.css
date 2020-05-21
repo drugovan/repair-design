@@ -1088,6 +1088,76 @@ input.invalid {
       line-height: 1.43rem;
       text-align: center; }
 
+.customers {
+  padding-top: 1rem;
+  padding-bottom: 27.2rem; }
+  .customers__col {
+    width: 26.86rem;
+    margin-right: 3.86rem; }
+    .customers__col--last {
+      margin-right: 0; }
+  .customers__section-title {
+    margin-bottom: 1.3rem; }
+  .customers__heading {
+    color: #181818; }
+  .customers__section-prelude {
+    width: 25.71rem;
+    margin-bottom: 3.4rem; }
+  .customers-card {
+    position: relative;
+    padding: 1.71rem 2.28rem 4.95rem 1.43rem;
+    box-shadow: 0px 10px 50px rgba(19, 19, 19, 0.04); }
+    .customers-card__heading {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem; }
+      .customers-card__heading-img {
+        width: 5.43rem;
+        height: 5.43rem;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 1.64rem; }
+      .customers-card__heading-text {
+        font-family: 'Yeseva One', cursive;
+        font-weight: normal;
+        font-size: 1.29rem;
+        line-height: 1.64rem;
+        color: #181818; }
+        .customers-card__heading-text--line {
+          display: block; }
+    .customers-card__comment {
+      font-size: 1.07rem;
+      line-height: 1.97rem;
+      color: #959595; }
+    .customers-card__tag {
+      position: relative;
+      display: flex;
+      align-items: center; }
+      .customers-card__tag-square {
+        min-width: 9.65rem;
+        padding: 0.79rem 1.3rem 0.83rem 1.24rem;
+        border-right: 1px solid white; }
+      .customers-card__tag-days {
+        min-width: 11.33;
+        text-transform: none;
+        padding: 0.79rem 1.76rem 0.83rem 1.1rem; }
+        .customers-card__tag-days--short {
+          padding-right: 1.38rem; }
+      .customers-card__tag-text {
+        font-size: 1.21rem;
+        line-height: 1.71rem; }
+
+.tag-square__icon {
+  margin-right: 1.1rem; }
+
+.tag-days__icon {
+  margin-right: 1.07rem; }
+
+.tags-wrapper {
+  position: absolute;
+  display: flex; }
+
 .footer-section {
   position: relative;
   padding-bottom: 4.67rem;
@@ -1113,7 +1183,8 @@ input.invalid {
   padding-top: 2.2rem;
   padding-bottom: 2.46rem;
   background-color: #181818;
-  z-index: 10; }
+  z-index: 10;
+  transform: translate(0.62rem, -49.83%); }
   .footer-modal__row {
     display: flex;
     justify-content: space-between;
@@ -1140,7 +1211,7 @@ input.invalid {
       .footer-modal__input-group--last {
         margin-bottom: 3.32rem; }
   .footer-modal__policy {
-    margin-bottom: 3.66rem; }
+    margin-bottom: 3.6rem; }
     .footer-modal__policy-label {
       position: relative;
       margin-left: -1.8rem; }
